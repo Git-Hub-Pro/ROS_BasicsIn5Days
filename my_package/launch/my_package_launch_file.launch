@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="my_package" type="move_robot.py" name="move_robot.py"  output="screen">
+    </node>
+</launch>
