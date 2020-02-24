@@ -1,0 +1,22 @@
+<launch>
+
+  <node pkg ="my_sphero_actions"
+        type="rec_odom_action_server.py"
+        name="record_odom_action_server_node"
+        output="screen">
+  </node>
+  
+  <node pkg ="my_sphero_services"
+        type="direction_service_server.py"
+        name="crash_direction_service_server"
+        output="screen">
+  </node>
+
+  <node pkg ="my_sphero_main"
+        type="sphero_main.py"
+        name="sphero_main_node"
+        output="screen">
+  </node>
+
+
+</launch>
